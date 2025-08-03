@@ -1,0 +1,156 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black; /* Black background */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: white; /* White text color */
+}
+
+/* Content area */
+.content {
+    flex: 1;
+}
+
+/* Fixed navigation bar at the bottom */
+.fixed-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for anchor tags in the fixed bottom nav */
+.fixed-bottom-nav a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.fixed-bottom-nav a:hover {
+    background-color: #ff3366; /* Pink color on hover */
+    border-radius: 5px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ff3366; /* Pink text */
+}
+
+header p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff3366;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    /* Adjust content width for smaller screens */
+    .content {
+        padding: 10px;
+    }
+
+    /* Header title size adjustment for small screens */
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    /* Navigation adjustments */
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    /* Fixed bottom nav adjustments */
+    .fixed-bottom-nav a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Additional adjustments for very small screens (max-width: 400px) */
+@media screen and (max-width: 400px) {
+    /* Adjust header title size for extra small screens */
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    /* Navigation links adjustments */
+    nav a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    /* Fixed bottom navigation link adjustments */
+    .fixed-bottom-nav a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

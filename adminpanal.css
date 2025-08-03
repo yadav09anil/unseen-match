@@ -1,0 +1,260 @@
+/* General Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Main Container for Search Form and User Details */
+.search-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Search Form Styling */
+.search-box {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.search-button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* User Details Section */
+.user-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-details label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Styling for Updates */
+.update-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.update-form input, .update-form select, .update-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.update-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.update-form button:hover {
+    background-color: #45a049;
+}
+
+/* Message Display */
+.update-message, .no-result-message {
+    text-align: center;
+    font-size: 18px;
+}
+
+.no-result-message {
+    color: #f44336;
+}
+
+.update-message {
+    color: #4CAF50;
+}
+
+/* Logout Button */
+.logout-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #e53935;
+}
+
+/* Container for displaying the data in a box */
+.user-box {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture container */
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 50px; /* Set width to 100px */
+    height: 50px; /* Set height to 100px */
+    border-radius: 50%; /* This creates the circular shape */
+    object-fit: cover; /* Ensures the image fits within the circle */
+    border: 2px solid #ccc; /* Optional: adds a border around the image */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    /* Adjust for tablets and smaller screens */
+    .search-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .search-box,
+    .search-button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .update-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .update-form input, 
+    .update-form select, 
+    .update-form textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .update-form button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .logout-button {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    .user-details {
+        margin-top: 15px;
+        padding: 12px;
+    }
+
+    .profile-pic {
+        width: 80px; /* Adjust profile pic size for tablets */
+        height: 80px;
+    }
+}
+
+/* Extra Small Screen */
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .search-box {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .search-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .update-form input, 
+    .update-form select, 
+    .update-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .update-form button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .logout-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .user-details {
+        margin-top: 15px;
+        padding: 12px;
+    }
+
+    /* Adjust profile pic size for small screens */
+    .profile-pic {
+        width: 70px; /* Adjust profile pic size for smaller screens */
+        height: 70px;
+    }
+}

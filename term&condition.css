@@ -1,0 +1,132 @@
+/* General body styles */
+body {
+    font-family: 'Dancing Script', cursive; /* Romantic font */
+    background: radial-gradient(circle, #6d6769, #000000); /* Circular gradient from light pink to dark pink */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the entire page */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #f03c7e; /* Soft pink border */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #ff3366; /* Romantic pink color */
+    font-family: 'Dancing Script', cursive;
+}
+
+header p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Section for terms content */
+.terms-content {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Subheading styles (h2) */
+.terms-content h2 {
+    font-size: 28px;
+    color: #ff3366;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Paragraphs inside the terms content */
+.terms-content p {
+    margin-bottom: 20px;
+}
+
+/* Unordered list styles (for list items under User Conduct, etc.) */
+.terms-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.terms-content li {
+    margin-bottom: 10px;
+}
+
+/* Hyperlink styles */
+.terms-content a {
+    color: #ff3366;
+    text-decoration: none;
+}
+
+.terms-content a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    /* Adjust container width for small screens */
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Title font size for small screens */
+    header h1 {
+        font-size: 30px;
+    }
+
+    /* Subheading font size for small screens */
+    .terms-content h2 {
+        font-size: 24px;
+    }
+
+    /* Adjust text size and line-height */
+    .terms-content p {
+        font-size: 14px;
+    }
+
+    /* Adjust the margin for lists */
+    .terms-content ul {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Title font size for very small screens */
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust subheading font size for very small screens */
+    .terms-content h2 {
+        font-size: 20px;
+    }
+
+    /* Adjust text size and line-height */
+    .terms-content p {
+        font-size: 12px;
+    }
+
+    /* Adjust list item size for very small screens */
+    .terms-content li {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,228 @@
+/* General body styles */
+body {
+    font-family: 'Dancing Script', cursive; /* Romantic font */
+    background: radial-gradient(circle, #6d6769, #000000); /* Circular gradient from light pink to dark pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Profile container styles */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px; /* Ensures the container doesn’t grow too wide on larger screens */
+    text-align: center;
+    border: 5px solid #f03c7e; /* Soft pink border */
+    padding-bottom: 60px; /* Added padding at the bottom to ensure content doesn't get hidden by the fixed navbar */
+}
+
+/* Title styles */
+h2 {
+    font-size: 30px;
+    color: #ff3366; /* Romantic pink color */
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Profile Picture */
+.profile-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Plus Icon */
+.plus-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ff3366;
+    color: white;
+    border-radius: 50%;
+    width: 40px; /* Ensure it's a circle */
+    height: 40px; /* Ensure it's a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Larger font size for the plus symbol */
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.plus-icon:hover {
+    background-color: #d42f57;
+}
+
+/* Profile Details */
+.profile-details {
+    text-align: left;
+    margin: 20px 0;
+    color: #333;
+}
+
+.profile-details p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Flex container for name and verified badge */
+.name-container {
+    display: inline-flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: center; /* Ensure the content is centered */
+}
+
+/* Verified Badge styles */
+.verified-badge {
+    width: 25px; /* Set the image size */
+    height: 25px;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Edit and Settings Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3366; /* Romantic pink */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #d42f57; /* Darker pink for hover effect */
+}
+
+/* File Input (hidden) */
+#file-input {
+    display: none;
+}
+
+/* Fixed Bottom Navigation */
+.fixed-bottom-nav {
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff3366;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centers the links in one row */
+}
+
+.fixed-bottom-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.fixed-bottom-nav a:hover {
+    background-color: #d42f57;
+}
+
+.fixed-bottom-nav a:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    /* Adjust container width for small screens */
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Title size */
+    h2 {
+        font-size: 26px;
+    }
+
+    /* Adjust profile picture size */
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Adjust the plus icon size */
+    .plus-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    /* Adjust profile details font size */
+    .profile-details p {
+        font-size: 1em;
+    }
+
+    /* Adjust buttons */
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Adjust bottom navigation links */
+    .fixed-bottom-nav a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Adjust title size for extra small screens */
+    h2 {
+        font-size: 22px;
+    }
+
+    /* Adjust profile picture size */
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Adjust the plus icon size */
+    .plus-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    /* Adjust profile details font size */
+    .profile-details p {
+        font-size: 0.9em;
+    }
+
+    /* Adjust buttons */
+    .btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* Adjust bottom navigation links */
+    .fixed-bottom-nav a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

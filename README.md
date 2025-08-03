@@ -59,16 +59,16 @@ git clone https://github.com/yadav09anil/unseen-match.git
 Below are some screenshots of Unseen Match website:
 
 ###  Login Page
-![Login Page](ScreenShots/Login.png)
+![Login Page](Screenshots/Login.png)
 
 ###  Profile Page
-![Home Page](ScreenShots/Profile.png)
+![Home Page](Screenshots/Profile.png)
 
 ###  Request Page 
-![Profile Page](ScreenShots/Request.png)
+![Profile Page](Screenshots/Request.png)
 
 ###  Match Page
-![Home Page](ScreenShots/Match.png)
+![Home Page](Screenshots/Match.png)
 
 ###  Love Page 
-![Profile Page](ScreenShots/Love.png)
+![Profile Page](Screenshots/Love.png)

@@ -52,5 +52,23 @@
 1. **Clone the Repository**
 ```bash
 git clone https://github.com/yadav09anil/unseen-match.git
+```
 
+ ## 📸 Screenshots
 
+Below are some screenshots of Unseen Match website:
+
+###  Login Page
+![Login Page](ScreenShots/Login.png)
+
+###  Profile Page
+![Home Page](ScreenShots/Profile.png)
+
+###  Request Page 
+![Profile Page](ScreenShots/Request.png)
+
+###  Match Page
+![Home Page](ScreenShots/Match.png)
+
+###  Love Page 
+![Profile Page](ScreenShots/Love.png)
